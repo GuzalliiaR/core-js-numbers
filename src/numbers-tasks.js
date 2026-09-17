@@ -7,7 +7,7 @@
  *                                                                                           *
  ******************************************************************************************* */
 
-/**
+/** 1
  * Returns an area of a rectangle given by width and height.
  *
  * @param {number} width
@@ -18,11 +18,11 @@
  *   5, 10 => 50
  *   5, 5  => 25
  */
-function getRectangleArea(/* width, height */) {
-  throw new Error('Not implemented');
+function getRectangleArea(width, height) {
+  return width * height;
 }
 
-/**
+/** 2
  * Returns a circumference of circle given by radius.
  *
  * @param {number} radius
@@ -33,11 +33,12 @@ function getRectangleArea(/* width, height */) {
  *   3.14 => 19.729201864543903
  *   0    => 0
  */
-function getCircleCircumference(/* radius */) {
-  throw new Error('Not implemented');
+function getCircleCircumference(radius) {
+  const L = 2 * Math.PI * radius;
+  return L;
 }
 
-/**
+/** 3
  * Returns an average of two given numbers.
  *
  * @param {number} value1
@@ -49,11 +50,11 @@ function getCircleCircumference(/* radius */) {
  *  10, 0  => 5
  *  -3, 3  => 0
  */
-function getAverage(/* value1, value2 */) {
-  throw new Error('Not implemented');
+function getAverage(value1, value2) {
+  return (value1 + value2) / 2;
 }
 
-/**
+/** 4
  * Returns a distance between two points by cartesian coordinates.
  *
  * @param {number} x1
@@ -71,7 +72,7 @@ function getDistanceBetweenPoints(/* x1, y1, x2, y2 */) {
   throw new Error('Not implemented');
 }
 
-/**
+/** 5
  * Returns a root of linear equation a*x + b = 0 given by coefficients a and b.
  *
  * @param {number} a
@@ -87,7 +88,7 @@ function getLinearEquationRoot(/* a, b */) {
   throw new Error('Not implemented');
 }
 
-/**
+/** 6
  * Returns an angle (in radians) between two vectors given by xi and yi,
  * coordinates in Cartesian plane.
  * See details https://en.wikipedia.org/wiki/Euclidean_vector#Representations
@@ -108,7 +109,7 @@ function getAngleBetweenVectors(/* x1, y1, x2, y2 */) {
   throw new Error('Not implemented');
 }
 
-/**
+/** 7
  * Returns a last digit of a integer number.
  * The input parameter will always be greater than or equal to zero and will be in decimal notation.
  *
