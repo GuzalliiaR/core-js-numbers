@@ -389,7 +389,7 @@ function numberToStringInBase(number, base) {
   return number.toString(base);
 }
 
-/**
+/** 20
  * Returns a string representation of a number in exponential notation.
  *
  * @param {number} number
@@ -399,11 +399,11 @@ function numberToStringInBase(number, base) {
  * @example:
  * 12345, 2    => '1.23e+4'
  */
-function toExponential(/* number, fractionDigits */) {
-  throw new Error('Not implemented');
+function toExponential(number, fractionDigits) {
+  return number.toExponential(fractionDigits);
 }
 
-/**
+/** 21
  * Returns a string representation of a number in fixed-point notation.
  *
  * @param {number} number
@@ -418,7 +418,7 @@ function toFixed(/* number, fractionDigits */) {
   throw new Error('Not implemented');
 }
 
-/**
+/** 22
  * Returns a string representation of a number in normal (fixed-point or exponential)
  * notation rounded to precision significant digits.
  *
@@ -434,7 +434,7 @@ function toPrecision(/* number, precision */) {
   throw new Error('Not implemented');
 }
 
-/**
+/** 23
  * Returns the primitive value of a Number object.
  *
  * @param {number} number
@@ -448,7 +448,7 @@ function getNumberValue(/* number */) {
   throw new Error('Not implemented');
 }
 
-/**
+/** 24
  * Returns a boolean value indicating whether the parameter is a number or not.
  *
  * @param {number} number
@@ -467,7 +467,7 @@ function isNumber(/* number */) {
   throw new Error('Not implemented');
 }
 
-/**
+/** 25
  * Returns a boolean value indicating whether a number is an integer or not.
  *
  * @param {number} number
@@ -482,7 +482,7 @@ function isInteger(/* number */) {
   throw new Error('Not implemented');
 }
 
-/**
+/** 26
  * Returns a floating point number or, if the number cannot be parsed from the argument, returns NaN.
  *
  * @param {string} str
@@ -496,7 +496,7 @@ function getFloatOnString(/* str */) {
   throw new Error('Not implemented');
 }
 
-/**
+/** 27
  * Returns an integer of the specified base or, if the number cannot be parsed
  * from the argument, returns NaN.
  *
@@ -514,7 +514,7 @@ function getIntegerOnString(/* str, base */) {
   throw new Error('Not implemented');
 }
 
-/**
+/** 28
  * Returns whether a number is a safe integer.
  *
  * @param {number} number
@@ -529,7 +529,7 @@ function isSafeInteger(/* number */) {
   throw new Error('Not implemented');
 }
 
-/**
+/** 29
  * Returns the smallest integer less than or equal to a given number.
  *
  * @param {number} number
