@@ -137,7 +137,7 @@ function getLastDigit(value) {
   return value % 10;
 }
 
-/**
+/** 8
  * Returns a number by given string representation.
  *
  * @param {string} value
@@ -148,11 +148,11 @@ function getLastDigit(value) {
  *     '37'     => 37
  * '-525.5'     => -525.5
  */
-function parseNumberFromString(/* value */) {
-  throw new Error('Not implemented');
+function parseNumberFromString(value) {
+  return Number(value);
 }
 
-/**
+/** 9
  * Returns a diagonal length of the rectangular parallelepiped given by its sides a,b,c.
  *
  * @param {number} a
@@ -169,7 +169,7 @@ function getParallelepipedDiagonal(/* a, b, c */) {
   throw new Error('Not implemented');
 }
 
-/**
+/** 10
  * Returns the number rounded to specified power of 10.
  *
  * @param {number} num
@@ -190,7 +190,7 @@ function roundToPowerOfTen(/* num, pow */) {
   throw new Error('Not implemented');
 }
 
-/**
+/** 11
  * Returns true is the number is prime; otherwise false.
  * See: https://en.wikipedia.org/wiki/Primality_test
  *
@@ -211,7 +211,7 @@ function isPrime(/* n */) {
   throw new Error('Not implemented');
 }
 
-/**
+/** 12
  * Tries to convert value to number and returns it if conversion was successful;
  * otherwise returns default value passed as a second argument.
  *
@@ -230,7 +230,7 @@ function toNumber(/* value, def */) {
   throw new Error('Not implemented');
 }
 
-/**
+/** 13
  * Returns the cube of the given number.
  *
  * @param {number} num
@@ -245,7 +245,7 @@ function getCube(/* num */) {
   throw new Error('Not implemented');
 }
 
-/**
+/** 14
  * Returns the Fibonacci number located at the index position.
  *
  * @param {number} index
@@ -262,7 +262,7 @@ function getFibonacciNumber(/* index */) {
   throw new Error('Not implemented');
 }
 
-/**
+/** 15
  * Returns the sum of all numbers from 1 to n.
  *
  * @param {number} n
@@ -277,7 +277,7 @@ function getSumToN(/* n */) {
   throw new Error('Not implemented');
 }
 
-/**
+/** 16
  * Returns the sum of the digits of a given number.
  *
  * @param {number} num
@@ -292,7 +292,7 @@ function getSumOfDigits(/* num */) {
   throw new Error('Not implemented');
 }
 
-/**
+/** 17
  * Returns true if the given number is a power of two, false otherwise.
  *
  * @param {number} num
@@ -307,7 +307,7 @@ function isPowerOfTwo(/* num */) {
   throw new Error('Not implemented');
 }
 
-/**
+/** 18
  * Returns the sine of a number.
  *
  * @param {number} num
@@ -321,7 +321,7 @@ function getSine(/* num */) {
   throw new Error('Not implemented');
 }
 
-/**
+/** 19
  * Returns a string representation of a number in a specified base (radix).
  *
  * @param {number} number
