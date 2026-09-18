@@ -599,8 +599,21 @@ function getIntegerPartNumber(number) {
  * 1, 2, 3       => 6
  * 0.1, 0.2, 0.3 => 0.6
  */
-function getSumOfNumbers(/* x1, x2, x3 */) {
-  throw new Error('Not implemented');
+function getSumOfNumbers(x1, x2, x3) {
+  function getCountNumbersAfterPoint(num) {
+    const arr = num.toString().split('.');
+    const countAfterPoint = arr[1] ? arr[1].length : 0;
+    return countAfterPoint;
+  }
+
+  const n = Math.max(
+    getCountNumbersAfterPoint(x1),
+    getCountNumbersAfterPoint(x2),
+    getCountNumbersAfterPoint(x3)
+  );
+
+  const sum = (x1 * 10 ** n + x2 * 10 ** n + x3 * 10 ** n) / 10 ** n;
+  return sum;
 }
 
 /** 34
